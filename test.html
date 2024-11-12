@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Control</title>
+    <style>
+        /* CSS for styling */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        video {
+            max-width: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: lightgray;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video id="videoPlayer" src="spacesound.mp4" controls></video>
+        <button id="startButton" onclick="startVideo()">Start</button>
+        <button id="stopButton" onclick="stopVideo()" disabled>Stop</button>
+    </div>
+
+    <script>
+        // JavaScript to control the video
+        const video = document.getElementById("videoPlayer");
+        const startButton = document.getElementById("startButton");
+        const stopButton = document.getElementById("stopButton");
+
+        function startVideo() {
+            video.play();
+            startButton.disabled = true;
+            stopButton.disabled = false;
+        }
+
+        function stopVideo() {
+            video.pause();
+            video.currentTime = 0;
+            startButton.disabled = false;
+            stopButton.disabled = true;
+        }
+    </script>
+</body>
+</html>

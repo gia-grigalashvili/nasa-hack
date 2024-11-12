@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wd2-size{
+    width: 100%;
+    height: 550px;
+}
+
+.just-space{
+    width: 100%;
+    height: 550px;
+
+    background-color: gainsboro;
+}
+
+.image{
+    width: 100%;
+    height: 900px;
+}
+
+table {
+    width: 380px;
+    height: 380px;
+    border-collapse: collapse;
+}
+td {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+}
+.cell {
+    border: 1px solid #000;
+}
+.cell-red {
+    background-color: #FF0000;
+}
+.cell-green {
+    background-color: #00FF00;
+}
+.cell-black {
+    background-color: #000;
+}
+.cell-yellow {
+    background-color: #FFFF00;
+}
+.cell-cyan {
+    background-color: #00FFFF;
+}
+.cell-gray {
+    background-color: #808080;
+}
+
+
+.just-space{
+    width: 100%;
+    height: 200px;
+}
+
+.color-gradient {
+    width: 100%;
+    height: 200px;
+    background-color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}

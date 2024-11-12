@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    caret-color: #00000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+.small-nav{
+    width: 100%;
+    height: 30px;
+
+    background-color: #ffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.small-text{
+    font-family: 'Caveat', cursive;
+    margin-right: 20px;
+
+    color: black;
+}
+
+.nav{
+    width: 100%;
+    height: 85px;
+
+    background-color: #000E3E;
+}
+
+.nasa-logo{
+    width: 55px;
+    height: 44px;
+
+    margin-left: 22px;
+}
+
+.nav-child{
+    width: 100%;
+    height: 87px;
+    display: flex;
+    align-items: center;
+}
+
+.link-a{
+    margin-left: 35px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size:  8px;
+    letter-spacing: 2px;
+
+    display: flex;
+}
+.link-a i{
+    font-size: 12px;
+    color: rgb(212, 209, 203);
+
+    margin-left: 4px;
+    margin-top: 3px;
+}
+.link-a h1{
+    color: rgb(212, 209, 203);
+}
+
+
+.nasa{
+    background-size: 100%, 25%, 25%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    background-image: url(images/nasa-background.png);
+}
+.moon{
+    background-size: 100%, 25%, 25%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    background-image: url(images/mtvare.jpg);
+}
+
+.sspace{
+    background-size: 100%, 25%, 25%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    background-image: url(images/sound4.jpg);
+}
+.back-half{
+    width: 50%;
+    height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-blur{
+    width: 100%;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.535);
+
+    display: flex;
+    align-items: center;
+}
+.background-abouts{
+    width: 80%;
+    height: 260px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.background-abouts h1{
+    font-family: 'Caveat', cursive;
+    color: #ffff;
+    font-size: 67px;
+}
+.background-abouts h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffff;
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 6px;
+}
+.back-button{
+    width: 200px;
+    height: 42px;
+    border-radius: 6px;
+    background-color: rgb(165, 36, 32);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+.back-button:hover{
+    width: 200px;
+    height: 42px;
+    border-radius: 6px;
+    background-color: rgb(132, 34, 30);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+.back-button h3{
+    color: #ffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mtvare2{
+    background-image: url(images/mtvare2.jpg);
+    margin-top: 44px;
+    
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 25%;
+    height: 200px;
+}
+
+.three-image{
+    width: 80%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.three-image-child{
+    width: 215px;
+    height: 125px;
+
+    margin-left: 8px;
+    margin-right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.three-image-child img{
+    width: 214px;
+    height: 124px;
+    border-radius: 16px;
+    position: absolute;
+}
+
+.black-blur1{
+    width: 214px;
+    height: 124px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.430);
+    position: absolute;
+    cursor: pointer;
+
+    border-radius: 16px;
+    border: 2px solid rgb(0 114 206);
+    padding: 2px;
+}
+.black-blur1:hover{
+    background-color: rgba(0, 0, 0, 0.385);
+}
+
+.black-blur2{
+    width: 214px;
+    height: 124px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.430);
+    position: absolute;
+    cursor: pointer;
+
+    border-radius: 16px;
+    border: 0px solid rgb(0 114 206);
+    padding: 2px;
+}
+.black-blur2:hover{
+    background-color: rgba(0, 0, 0, 0.385);
+}
+
+.black-blur3{
+    width: 214px;
+    height: 124px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.430);
+    position: absolute;
+    cursor: pointer;
+
+    border-radius: 16px;
+    border: 0px solid rgb(0 114 206);
+    padding: 2px;
+}
+.black-blur3:hover{
+    background-color: rgba(0, 0, 0, 0.385);
+}
+
+
+
+
+
+
+.text{
+    width: 45%;
+    margin:auto;
+    
+   
+}
+.text2{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.SoundsOfSpacehistori-img{
+    background-image: url(images/sound.jpg);
+    background-position: 0% 75%;
+    background-size: 100%, 5%, 25%;
+    border-radius: 10px;
+    margin-right: 53px;
+    margin-top: 42px;
+    width: 570px;
+}
+
+.SoundsOfSpacehistori{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin-top: 30px;
+   
+    
+        
+    }
+
+    .h1text h1{
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+
+       
+    }
+    .SoundsOfSpacehistori p{
+        font-size: 20px;
+        margin-top: 4%;
+        font-family: 'Montserrat', sans-serif;
+        width: 85%;
+    }
+    
+.SoundsOfSpacehistori-img p{
+    color: rgb(255, 255, 255);
+ text-align: center;
+ margin-top: 150px;
+ margin-left: 332px;
+ font-size: 30px;
+}
+
+
+.text-SoundsOfSpace{
+    width: 50%;
+    margin:auto;
+    
+}
+.text-SoundsOfSpace2{
+    font-weight: bolder;
+    font-size: larger;
+}
+.text-123{
+    margin-left: -82px;
+}
+.text-123 h1{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 90px;
+
+}
+
+.text-123 p{
+    font-size: 20px;
+    margin-top: 4%;
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    
+}
+
+.SoundsOfSpace{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 120px;
+}
+
+
+.SoundsOfSpace-img{
+
+    border-radius: 10px;
+    margin-right: -5px;
+    margin-top: 42px;
+    width: 570px;
+    margin-left: -25px;
+}
+
+
+
+.videop{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+   height: 500px;
+    background-color: rgba(0, 0, 0, 0.601);
+    
+ 
+}
+.main-video{
+    background-image: url(images/erwrwrwr.jpg) ;
+   width: 100%;
+ 
+   border-radius: 2px;
+   box-shadow: 800px 800px  800px black;
+   background-color: rgba(0, 0, 0, 0.535);
+   
+   
+   
+}
+
+
+
+
+
+
+
+
+
+.button-div button {
+    margin-top: 2%;
+    position: absolute;
+    width: 148px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Gabarito', cursive;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    margin-top: 41px;
+   
+    
+}
+
+.button-div button:hover{
+    color: white;
+    border: 2px solid blue;
+    background-color: blue;
+    transition: 0.5s;
+
+}
+
+
+.video-text{
+    width: 35%;
+    margin:auto;
+    color: white;
+    margin-top: 97px;
+    
+}
+.videop video{
+    border-radius: 20px; 
+    border-radius: 10px;
+    margin-right: 53px;
+    margin-top: 42px;
+    width: 700px;
+    margin-left: 92px;
+}
+
+.video-text h1{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+
+.video-text p{
+    font-size: 20px;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-main{
+    margin-top: 5%;
+    background-color: black;
+    width: 100%;
+    height: 620px;
+    background-image: url(https://wallpapercave.com/wp/wp9116463.jpg);
+    background-size: 50%;
+}
+
+.img-footer img{
+    position: relative;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 3%;
+}
+
+.footer-txt-1{
+    position: absolute;
+    font-family: 'Gabarito', cursive;
+    color: white;
+    margin-left: 3%;
+
+    cursor: pointer;
+}
+
+.footer-txt-1 h1{
+    font-size:  25px;
+    margin-top: 3%;
+
+    cursor: pointer;
+}
+
+.footer-txt-1 h2{
+    font-size:  15px;
+    margin-top: 6%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(177, 177, 177);
+
+    cursor: pointer;
+}
+
+.footer-txt-1 h3{
+    font-size:  15px;
+    margin-top: 6%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+
+.footer-txt-1 h4{
+    font-size:  20px;
+    margin-top: 3%;
+    position: absolute;
+
+    cursor: pointer;
+}
+
+.footer-txt-1 img{
+    position: absolute;
+    height: 35px;
+    margin-left: 18%;
+    margin-top: 1.5%;
+}
+
+
+.footer-sections{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 40%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.footer-sections h1{
+    font-size: 13.5px;
+
+    cursor: pointer;
+    
+}
+
+
+.footer-sections-1{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 52.5%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.footer-sections-1 h1{
+    font-size: 13.5px;
+
+    cursor: pointer;
+    
+}
+
+
+.footer-sections-2{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 67%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.footer-sections-2 h1{
+    font-size: 13.5px;
+    cursor: pointer;
+    
+}
+
+
+
+.footer-txt-2{
+    position: absolute;
+    font-family: 'Gabarito', cursive;
+    color: rgb(146, 146, 146);
+    margin-left: 82%;
+}
+
+.footer-txt-2 h1{
+    font-size: 17.5px;
+
+}
+
+.footer-txt-2 img{
+    position: absolute;
+    height: 40px;
+    margin-left: -36%;
+    margin-top: 20%;
+}
+
+
+.footer-sections-3{
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 82%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.footer-sections-3 h2{
+    font-size: 13.5px;
+    
+}
+
+.line{
+    position: absolute;
+    height: 0.5px;
+    width: 95%;
+    background-color: rgb(149, 149, 149);
+    margin-left: 2.5%;
+    margin-top: 20%;
+}
+
+.last-footer{
+    width: 95%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 22%;
+    color: rgb(172, 172, 172);
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 3%;
+    font-size: 7px;
+}
